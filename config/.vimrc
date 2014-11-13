@@ -167,10 +167,6 @@ vnoremap <silent> # :call VisualSelection('b', '')<CR>
 map j gj
 map k gk
 
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
-
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
@@ -320,7 +316,7 @@ map <leader>x :e ~/buffer.md<cr>
 map <leader>pp :setlocal paste!<cr>
 
 " Execute selection as shell script
-vmap <leader>e <esc>:'<,'>:w !sh<CR>
+vmap <leader>sh <esc>:'<,'>:w !sh<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
